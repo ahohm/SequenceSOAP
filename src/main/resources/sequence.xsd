@@ -1,0 +1,24 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.aho.com/exam1/sequence"
+            xmlns:tns="http://www.aho.com/exam1/sequence"
+            elementFormDefault="qualified">
+
+    <xsd:element name="SequenceRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="seq1" type="xsd:integer"></xsd:element>
+                <xsd:element name="seq2" type="xsd:integer"></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="SequenceResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="exist" type="xsd:boolean"></xsd:element>
+                <xsd:element name="common" type="xsd:integer"></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>
